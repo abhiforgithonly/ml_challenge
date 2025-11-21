@@ -1,0 +1,246 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title> Sale Amount Prediction</title>
+    <style>
+      :root {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        color-scheme: light dark;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: radial-gradient(circle at top, #1d4ed8 0, #020617 40%, #000 100%);
+        color: #e5e7eb;
+      }
+      .card {
+        background: rgba(15, 23, 42, 0.95);
+        border-radius: 16px;
+        padding: 24px 28px;
+        max-width: 720px;
+        width: 100%;
+        box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
+        border: 1px solid rgba(148, 163, 184, 0.35);
+      }
+      h1 {
+        font-size: 1.4rem;
+        margin: 0 0 4px;
+      }
+      .subtitle {
+        font-size: 0.9rem;
+        color: #9ca3af;
+        margin-bottom: 16px;
+      }
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 0.75rem;
+        padding: 4px 8px;
+        border-radius: 999px;
+        background: rgba(59, 130, 246, 0.15);
+        color: #bfdbfe;
+        margin-bottom: 10px;
+      }
+      .badge span {
+        font-size: 0.9rem;
+      }
+      label {
+        display: block;
+        font-size: 0.85rem;
+        margin-bottom: 6px;
+        color: #e5e7eb;
+      }
+      .hint {
+        font-size: 0.75rem;
+        color: #9ca3af;
+        margin-top: 4px;
+      }
+      .file-input {
+        width: 100%;
+        padding: 10px 12px;
+        border-radius: 10px;
+        border: 1px solid rgba(148, 163, 184, 0.7);
+        background: rgba(15, 23, 42, 0.9);
+        color: #e5e7eb;
+        font-size: 0.9rem;
+      }
+      .file-input::file-selector-button {
+        margin-right: 12px;
+        border: none;
+        background: #2563eb;
+        color: white;
+        padding: 6px 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 0.8rem;
+      }
+      .file-input::file-selector-button:hover {
+        background: #1d4ed8;
+      }
+      .actions {
+        margin-top: 18px;
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      button,
+      .btn-link {
+        border-radius: 999px;
+        border: none;
+        padding: 8px 18px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        background: linear-gradient(to right, #2563eb, #4f46e5);
+        color: white;
+        font-weight: 500;
+        box-shadow: 0 10px 25px rgba(37, 99, 235, 0.45);
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+      button:hover,
+      .btn-link:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 16px 35px rgba(37, 99, 235, 0.6);
+      }
+      .error {
+        margin-top: 14px;
+        padding: 10px 12px;
+        border-radius: 10px;
+        border: 1px solid rgba(248, 113, 113, 0.5);
+        background: rgba(127, 29, 29, 0.35);
+        color: #fecaca;
+        font-size: 0.8rem;
+      }
+      .footer {
+        margin-top: 14px;
+        font-size: 0.7rem;
+        color: #9ca3af;
+      }
+      code {
+        background: rgba(15, 23, 42, 0.9);
+        padding: 2px 4px;
+        border-radius: 4px;
+        font-size: 0.75rem;
+      }
+      .analysis {
+        margin-top: 24px;
+        border-top: 1px solid rgba(51, 65, 85, 0.9);
+        padding-top: 16px;
+      }
+      .analysis h3 {
+        font-size: 0.95rem;
+        margin-bottom: 4px;
+      }
+      .plots {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 12px;
+        margin-top: 10px;
+      }
+      .plots img {
+        width: 100%;
+        border-radius: 10px;
+        border: 1px solid rgba(31, 41, 55, 0.9);
+        background: #020617;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="badge">
+        <span>⚙️</span>
+        <span>ML + Django – Demo</span>
+      </div>
+      <h1>AdAstraa – Sale Amount Prediction</h1>
+      <p class="subtitle">
+        Upload a CSV with ad campaign metrics and download predictions with
+        <code>Predicted_Sale_Amount</code> appended.
+      </p>
+
+      <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="file">
+          Campaign data CSV
+        </label>
+        <input
+          id="file"
+          class="file-input"
+          type="file"
+          name="file"
+          accept=".csv"
+          required
+        />
+        <p class="hint">
+          Expected columns (no <code>Sale_Amount</code> in upload):
+          <code>Ad_ID</code>, <code>Campaign_Name</code>, <code>Clicks</code>,
+          <code>Impressions</code>, <code>Cost</code>, <code>Leads</code>,
+          <code>Conversions</code>, <code>Ad_Date</code>, <code>Location</code>,
+          <code>Device</code>, <code>Keyword</code>.
+        </p>
+
+        <div class="actions">
+          <button type="submit">Upload &amp; Predict</button>
+
+          {% if results_ready %}
+          <a
+            href="{% static 'predictions.csv' %}"
+            class="btn-link"
+            download="predictions.csv"
+          >
+            ⬇ Download latest predictions.csv
+          </a>
+          {% endif %}
+        </div>
+      </form>
+
+      {% if error %}
+      <div class="error">
+        <strong>Oops!</strong>
+        <div>{{ error }}</div>
+      </div>
+      {% endif %}
+
+      <div class="analysis">
+        <h3>Model analysis</h3>
+        <p class="hint">
+          These plots are generated from <code>train.csv</code> and your latest
+          prediction run.
+        </p>
+        <div class="plots">
+          <img
+            src="{% static 'target_distribution.png' %}"
+            alt="Sale_Amount distribution"
+          />
+          <img
+            src="{% static 'feature_importance.png' %}"
+            alt="Feature importance plot"
+          />
+
+          {% if results_ready %}
+          <img
+            src="{% static 'predictions_distribution.png' %}"
+            alt="Predicted Sale_Amount distribution"
+          />
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="footer">
+        The backend reuses the same preprocessing pipeline used during model
+        training (cleaning, feature engineering, encoding) before generating
+        predictions.
+      </div>
+    </div>
+  </body>
+</html>
