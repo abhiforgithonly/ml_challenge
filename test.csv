@@ -1,0 +1,101 @@
+Ad_ID,Campaign_Name,Clicks,Impressions,Cost,Leads,Conversions,Conversion_Rate,Ad_Date,Location,Device,Keyword
+AD_1000,Black Friday,240,5312,223.42,3,5,0.0693,2024-01-01,Los Angeles,Mobile,sale
+AD_1001,Holiday Special,195,2563,297.85,2,10,0.0896,2024-01-02,Houston,Mobile,sale
+AD_1002,Summer Sale,267,3020,186.31,9,5,0.0906,2024-01-03,Houston,Mobile,sale
+AD_1003,Black Friday,93,2095,250.82,10,7,0.1124,2024-01-04,Phoenix,Mobile,sale
+AD_1004,Black Friday,211,3923,264.24,6,9,0.0279,2024-01-05,Los Angeles,Mobile,offer
+AD_1005,Holiday Special,251,3757,185.65,10,5,0.045,2024-01-06,Houston,Tablet,deal
+AD_1006,Summer Sale,239,4532,259.23,3,1,0.0913,2024-01-07,Houston,Tablet,discount
+AD_1007,Summer Sale,277,5478,205.17,8,10,0.1314,2024-01-08,Los Angeles,Tablet,discount
+AD_1008,Black Friday,63,4278,244.85,14,10,0.0887,2024-01-09,Los Angeles,Tablet,sale
+AD_1009,Winter Promo,144,4796,245.03,8,1,0.0434,2024-01-10,Houston,Mobile,sale
+AD_1010,Black Friday,97,3678,230.37,2,2,0.1052,2024-01-11,Los Angeles,Desktop,buy now
+AD_1011,Black Friday,64,5242,163.54,6,6,0.1136,2024-01-12,Houston,Mobile,deal
+AD_1012,Black Friday,249,2540,275.3,7,9,0.0434,2024-01-13,Houston,Desktop,offer
+AD_1013,Black Friday,255,3059,198.12,2,8,0.0629,2024-01-14,Phoenix,Tablet,discount
+AD_1014,Holiday Special,264,4572,177.98,11,5,0.0848,2024-01-15,New York,Mobile,buy now
+AD_1015,Summer Sale,298,3183,156.12,10,1,0.0795,2024-01-16,Houston,Tablet,buy now
+AD_1016,Holiday Special,239,5910,238.63,2,7,0.0645,2024-01-17,Chicago,Mobile,discount
+AD_1017,Holiday Special,89,3722,251.63,10,5,0.0517,2024-01-18,New York,Tablet,offer
+AD_1018,Holiday Special,262,5314,152.49,1,6,0.024,2024-01-19,New York,Desktop,buy now
+AD_1019,Black Friday,257,5157,226.81,8,7,0.0175,2024-01-20,New York,Desktop,buy now
+AD_1020,Winter Promo,286,3819,183.97,1,3,0.1442,2024-01-21,Phoenix,Desktop,deal
+AD_1021,Summer Sale,131,4625,246.78,9,10,0.1286,2024-01-22,Houston,Mobile,offer
+AD_1022,Winter Promo,160,4729,176.15,11,3,0.0597,2024-01-23,Phoenix,Desktop,buy now
+AD_1023,Holiday Special,102,4604,253.64,6,5,0.144,2024-01-24,Houston,Mobile,offer
+AD_1024,Holiday Special,73,3597,208.01,7,6,0.1047,2024-01-25,Phoenix,Desktop,discount
+AD_1025,Winter Promo,203,5060,290.51,13,9,0.0776,2024-01-26,Phoenix,Desktop,sale
+AD_1026,Winter Promo,266,4693,170.63,10,5,0.079,2024-01-27,Chicago,Mobile,buy now
+AD_1027,Winter Promo,237,2795,201.16,7,1,0.0217,2024-01-28,Phoenix,Mobile,deal
+AD_1028,Holiday Special,173,3051,167.02,10,4,0.0228,2024-01-29,Los Angeles,Desktop,discount
+AD_1029,Holiday Special,286,3643,288.7,3,5,0.0943,2024-01-30,Chicago,Mobile,offer
+AD_1030,Summer Sale,90,5627,281.6,2,10,0.0875,2024-01-31,Phoenix,Desktop,discount
+AD_1031,Summer Sale,206,3363,188.69,9,10,0.0398,2024-02-01,New York,Mobile,buy now
+AD_1032,Holiday Special,64,5869,249.0,8,5,0.1425,2024-02-02,Los Angeles,Tablet,offer
+AD_1033,Winter Promo,94,3981,272.58,13,7,0.1194,2024-02-03,Los Angeles,Tablet,sale
+AD_1034,Winter Promo,114,3354,233.28,12,4,0.0259,2024-02-04,Los Angeles,Tablet,discount
+AD_1035,Summer Sale,138,3663,229.45,10,1,0.1403,2024-02-05,Chicago,Tablet,buy now
+AD_1036,Holiday Special,120,3529,186.28,7,5,0.1464,2024-02-06,Phoenix,Tablet,deal
+AD_1037,Summer Sale,58,4038,163.97,9,7,0.1494,2024-02-07,Phoenix,Desktop,offer
+AD_1038,Summer Sale,137,5419,284.58,4,10,0.0178,2024-02-08,New York,Tablet,discount
+AD_1039,Black Friday,178,3496,285.06,13,10,0.1132,2024-02-09,New York,Tablet,discount
+AD_1040,Black Friday,285,5302,244.97,4,6,0.0864,2024-02-10,Los Angeles,Tablet,sale
+AD_1041,Black Friday,185,4237,200.85,1,5,0.1088,2024-02-11,New York,Tablet,sale
+AD_1042,Winter Promo,265,5296,202.38,8,4,0.1456,2024-02-12,Chicago,Mobile,deal
+AD_1043,Holiday Special,112,3408,258.89,14,2,0.1063,2024-02-13,Phoenix,Desktop,deal
+AD_1044,Holiday Special,188,3400,284.57,14,4,0.1272,2024-02-14,Los Angeles,Tablet,buy now
+AD_1045,Holiday Special,292,3306,283.06,12,10,0.1314,2024-02-15,New York,Tablet,buy now
+AD_1046,Holiday Special,130,4680,266.98,3,10,0.1274,2024-02-16,Chicago,Tablet,deal
+AD_1047,Black Friday,185,4675,246.3,7,3,0.0697,2024-02-17,Chicago,Desktop,deal
+AD_1048,Winter Promo,212,2972,162.62,12,10,0.0412,2024-02-18,New York,Mobile,offer
+AD_1049,Winter Promo,212,3768,174.24,2,1,0.0655,2024-02-19,Phoenix,Desktop,sale
+AD_1050,Black Friday,82,3282,284.78,2,8,0.1349,2024-02-20,New York,Mobile,buy now
+AD_1051,Winter Promo,172,5430,240.96,7,5,0.0305,2024-02-21,Los Angeles,Tablet,sale
+AD_1052,Black Friday,54,2709,151.38,6,4,0.0819,2024-02-22,New York,Tablet,sale
+AD_1053,Holiday Special,283,3479,165.22,3,8,0.0427,2024-02-23,Chicago,Desktop,deal
+AD_1054,Black Friday,280,3434,249.53,9,7,0.0914,2024-02-24,New York,Desktop,offer
+AD_1055,Holiday Special,299,2648,150.76,10,2,0.1308,2024-02-25,Phoenix,Mobile,discount
+AD_1056,Holiday Special,90,2317,174.12,14,1,0.1333,2024-02-26,Houston,Mobile,offer
+AD_1057,Summer Sale,77,5748,232.31,13,11,0.0431,2024-02-27,New York,Desktop,offer
+AD_1058,Black Friday,184,5296,253.78,6,4,0.1371,2024-02-28,Phoenix,Mobile,sale
+AD_1059,Summer Sale,250,5890,247.79,10,8,0.0929,2024-02-29,Phoenix,Desktop,offer
+AD_1060,Black Friday,121,3257,183.64,10,2,0.059,2024-03-01,Chicago,Mobile,buy now
+AD_1061,Black Friday,61,2683,256.83,6,3,0.1091,2024-03-02,Phoenix,Desktop,sale
+AD_1062,Summer Sale,211,2663,185.59,1,1,0.0774,2024-03-03,Phoenix,Desktop,buy now
+AD_1063,Summer Sale,82,3998,198.81,4,1,0.0629,2024-03-04,Phoenix,Desktop,discount
+AD_1064,Black Friday,97,5898,261.97,10,3,0.1087,2024-03-05,Phoenix,Mobile,sale
+AD_1065,Winter Promo,296,5445,247.44,6,11,0.0448,2024-03-06,Los Angeles,Mobile,discount
+AD_1066,Holiday Special,200,5743,277.38,6,5,0.0562,2024-03-07,Los Angeles,Mobile,sale
+AD_1067,Summer Sale,111,3631,248.64,11,3,0.0708,2024-03-08,Chicago,Desktop,deal
+AD_1068,Holiday Special,265,3495,235.25,12,1,0.0455,2024-03-09,New York,Mobile,offer
+AD_1069,Winter Promo,86,5304,164.05,5,1,0.0667,2024-03-10,Phoenix,Mobile,deal
+AD_1070,Winter Promo,148,5763,205.16,1,8,0.09,2024-03-11,New York,Desktop,discount
+AD_1071,Winter Promo,221,3136,189.78,8,10,0.1137,2024-03-12,New York,Tablet,offer
+AD_1072,Summer Sale,153,3853,186.6,5,11,0.1174,2024-03-13,Chicago,Desktop,sale
+AD_1073,Winter Promo,263,3520,295.95,12,2,0.1252,2024-03-14,Phoenix,Mobile,offer
+AD_1074,Summer Sale,268,4489,208.96,12,3,0.1142,2024-03-15,Phoenix,Desktop,buy now
+AD_1075,Winter Promo,84,2563,283.81,12,2,0.1053,2024-03-16,Houston,Tablet,offer
+AD_1076,Holiday Special,242,3291,244.67,5,3,0.0433,2024-03-17,New York,Desktop,buy now
+AD_1077,Holiday Special,276,5581,269.22,7,7,0.066,2024-03-18,New York,Mobile,offer
+AD_1078,Black Friday,150,5878,225.4,4,1,0.0769,2024-03-19,Los Angeles,Tablet,buy now
+AD_1079,Holiday Special,224,5457,236.54,6,10,0.0216,2024-03-20,Houston,Mobile,discount
+AD_1080,Black Friday,255,5458,223.88,13,8,0.084,2024-03-21,Los Angeles,Tablet,deal
+AD_1081,Holiday Special,180,5184,179.29,4,10,0.0711,2024-03-22,Los Angeles,Tablet,sale
+AD_1082,Summer Sale,50,3636,258.37,14,10,0.1223,2024-03-23,Los Angeles,Desktop,offer
+AD_1083,Holiday Special,54,5696,192.12,3,10,0.1469,2024-03-24,Chicago,Desktop,deal
+AD_1084,Black Friday,267,4999,153.65,7,2,0.0878,2024-03-25,Chicago,Mobile,sale
+AD_1085,Black Friday,296,5152,246.82,8,3,0.0552,2024-03-26,Los Angeles,Desktop,sale
+AD_1086,Winter Promo,191,2698,176.57,4,9,0.0161,2024-03-27,Houston,Desktop,buy now
+AD_1087,Summer Sale,152,4160,291.07,13,7,0.1395,2024-03-28,New York,Tablet,discount
+AD_1088,Holiday Special,76,2001,293.09,2,4,0.1387,2024-03-29,Houston,Desktop,discount
+AD_1089,Winter Promo,186,2641,287.23,12,10,0.0454,2024-03-30,Phoenix,Tablet,deal
+AD_1090,Holiday Special,256,4267,205.52,10,5,0.1074,2024-03-31,Chicago,Tablet,discount
+AD_1091,Holiday Special,64,3589,152.32,14,2,0.0206,2024-04-01,New York,Tablet,offer
+AD_1092,Winter Promo,139,2854,289.25,3,11,0.0333,2024-04-02,New York,Mobile,discount
+AD_1093,Winter Promo,91,3759,214.23,1,8,0.0404,2024-04-03,Phoenix,Mobile,deal
+AD_1094,Winter Promo,173,5296,295.0,8,4,0.0512,2024-04-04,Phoenix,Mobile,discount
+AD_1095,Winter Promo,254,4432,294.54,3,9,0.1494,2024-04-05,Los Angeles,Tablet,offer
+AD_1096,Winter Promo,228,5474,277.95,12,5,0.1076,2024-04-06,Chicago,Mobile,buy now
+AD_1097,Holiday Special,112,3661,194.17,10,9,0.0638,2024-04-07,Chicago,Mobile,deal
+AD_1098,Winter Promo,145,3153,207.76,7,4,0.1132,2024-04-08,Houston,Desktop,buy now
+AD_1099,Summer Sale,280,3076,277.67,10,10,0.1381,2024-04-09,Los Angeles,Mobile,buy now
