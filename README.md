@@ -38,7 +38,12 @@ Intentionally kept very small and focused:
 - Model training + evaluation + analysis plots
 - The prediction view and URL configuration for Django
 
-**Key Note:** You have to create a static folder and it will generate the results automatically
+**Important Note about the `static/` folder:**
+- You must create the `static/` folder manually before running the application
+- The outputs (plots and predictions.csv) will be generated and stored in this folder automatically
+- If you don't create the `static/` folder, or create it with a different name, the application will throw errors
+- Simply run: `mkdir static` (Linux/Mac) or `md static` (Windows) in the project root
+
 ---
 
 ## 2. Setup & How to Run
@@ -353,6 +358,7 @@ This gives stakeholders a quick, visual sense of:
 - Package as a Docker image.
 - Add validation using a schema layer (e.g., Pydantic or DRF serializers).
 - Introduce CI/CD for running tests and deploying updates safely.
+- **Automatic folder generation:** Add logic to automatically create the `static/` folder if it doesn't exist, eliminating the manual setup step and potential errors from missing directories.
 
 ### 7.2 Known Problems Encountered & How I Addressed Them
 
@@ -395,7 +401,26 @@ This gives stakeholders a quick, visual sense of:
 
 ---
 
-## 8. Notes for Reviewers
+## 8. Deployment Note
+
+**Why this project is not deployed:**
+
+I've chosen not to deploy this application to a hosting platform because most free-tier hosting services (Heroku, Render, Railway, etc.) have inactivity timeouts that spin down applications after periods of non-use. This means:
+
+- The application might be unavailable when reviewers try to access it
+- Cold starts can take 30-60 seconds, creating a poor user experience
+- The demo could be lost or inaccessible at critical review times
+
+Instead, this project is designed to be:
+- **Easy to run locally** with minimal setup (`pip install` + `python manage.py runserver`)
+- **Self-contained** with all dependencies clearly documented
+- **Quick to test** (under 5 minutes from clone to running predictions)
+
+This approach ensures reviewers have a consistent, reliable experience rather than dealing with potential hosting issues.
+
+---
+
+## 9. Notes for Reviewers
 
 The project demonstrates:
 - Careful handling of messy, real-world-like data
