@@ -38,6 +38,7 @@ Intentionally kept very small and focused:
 - Model training + evaluation + analysis plots
 - The prediction view and URL configuration for Django
 
+**Key Note:** You have to create a static folder and it will generate the results automatically
 ---
 
 ## 2. Setup & How to Run
